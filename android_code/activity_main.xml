@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:background="#9fe782"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smart Bin"
+        android:padding="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            />
+
+
+        <ImageButton
+            android:id="@+id/retry"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="retryCk"
+            app:srcCompat="@android:drawable/ic_menu_rotate" />
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/bin1"
+                android:layout_width="91dp"
+                android:layout_height="110dp"
+                android:background="@drawable/empty_bin"
+                android:onClick="but1"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/state1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#c2ecff"
+                android:gravity="center"
+                android:text=" state "
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:text="NAME" />
+
+            <Button
+                android:id="@+id/bin2"
+                android:layout_width="91dp"
+                android:layout_height="110dp"
+                android:background="@drawable/empty_bin"
+                android:onClick="but2"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/state2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#c2ecff"
+                android:gravity="center"
+                android:text=" state "
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="NAME" />
+
+            <Button
+                android:id="@+id/bin3"
+                android:layout_width="91dp"
+                android:layout_height="110dp"
+                android:background="@drawable/empty_bin"
+                android:onClick="but3"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/state3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#c2ecff"
+                android:gravity="center"
+                android:text=" state "
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="NAME" />
+
+            <Button
+                android:id="@+id/bin4"
+                android:layout_width="91dp"
+                android:layout_height="110dp"
+                android:background="@drawable/empty_bin"
+                android:onClick="but4"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/state4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#c2ecff"
+                android:text=" state "
+                android:gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name5"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:text="NAME" />
+
+            <Button
+                android:id="@+id/bin5"
+                android:layout_width="91dp"
+                android:layout_height="110dp"
+                android:background="@drawable/empty_bin"
+                android:onClick="but5"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/state5"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#c2ecff"
+                android:text=" state "
+                android:gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="NAME" />
+
+            <Button
+                android:id="@+id/bin6"
+                android:layout_width="91dp"
+                android:layout_height="110dp"
+                android:background="@drawable/empty_bin"
+                android:onClick="but6"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/state6"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#c2ecff"
+                android:text=" state "
+                android:gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="NAME" />
+
+        <Button
+            android:id="@+id/bin7"
+            android:layout_width="91dp"
+            android:layout_height="110dp"
+            android:background="@drawable/empty_bin"
+            android:onClick="but7"
+            android:visibility="invisible" />
+
+        <TextView
+
+            android:id="@+id/state7"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="#c2ecff"
+            android:text=" state "
+            android:gravity="center"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="NAME" />
+
+        <Button
+            android:id="@+id/bin8"
+            android:layout_width="91dp"
+            android:layout_height="110dp"
+            android:background="@drawable/empty_bin"
+            android:onClick="but8"
+            android:visibility="invisible" />
+
+        <TextView
+
+            android:id="@+id/state8"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="#c2ecff"
+            android:text=" state "
+            android:gravity="center"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="NAME" />
+
+        <Button
+            android:id="@+id/bin9"
+            android:layout_width="91dp"
+            android:layout_height="110dp"
+            android:background="@drawable/empty_bin"
+            android:onClick="but9"
+            android:visibility="invisible" />
+
+        <TextView
+
+            android:id="@+id/state9"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="#c2ecff"
+            android:text=" state "
+            android:gravity="center"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
