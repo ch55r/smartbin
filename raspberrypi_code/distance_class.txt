@@ -1,0 +1,32 @@
+#Distance_class.py
+
+
+import RPi.GPIO as gpio
+import time
+#
+class Dis:
+        def __init__(self, trig = 24, echo = 23):
+                self.trig=trig
+                self.echo=echo
+                gpio.setmode(gpio.BCM)
+                gpio.setup(self.trig,gpio.OUT)
+                gpio.setup(self.echo,gpio.IN)
+
+
+        def measure(self):
+                trig=self.trig
+                echo=self.echo
+                gpio.output(trig, False)
+                time.sleep(1.5)
+                gpio.output(trig,True)
+                time.sleep(0.00001)
+                gpio.output(trig,False)
+                while gpio.input(echo)==0:
+                        pulse_start=time.time()
+                while gpio.input(echo)==1:
+                        pulse_end=time.time()
+                distance=round((pulse_end-pulse_start)*17000,2)
+#                print "Distance : ",distance , " cm"
+                str_dis=str(distance)
+                return  str_dis
+
